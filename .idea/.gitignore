@@ -1,0 +1,10 @@
+# デフォルトの無視対象ファイル
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../discord4j\.idea/codestream.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# エディターベースの HTTP クライアントリクエスト
+/httpRequests/
