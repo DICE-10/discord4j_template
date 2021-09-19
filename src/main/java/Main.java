@@ -43,6 +43,7 @@ public class Main {
             // MessageCreateEvent
             Mono<Void> onMessage = gateway.on(MessageCreateEvent.class, event -> {
                 Message message = event.getMessage();
+                // 特定のチャンネルか？
                 if(SendChannnelId == message.getChannelId().asLong()){
                     RestChannel sendChannel = client.getChannelById(Snowflake.of(SendChannnelId));
                     if(!message.getAuthorAsMember().block().isBot()){
